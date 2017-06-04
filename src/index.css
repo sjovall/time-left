@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: #a94442;
+}
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  40% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+  60% { transform: scale(1); }
+  100% { transform: scale(1); }
+
+}
+
+.pulse {
+  animation-name: pulse_animation;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.14, 2.71, 0.58, 1);
+}
